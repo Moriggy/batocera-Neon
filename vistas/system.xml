@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<!-- Texto info de consola / sistema -->
+	
+	<feature supported="manufacturer">
+		<view name="system">
+			<text name="manufacturerName" extra="static">
+				<text>${system.sortedBy}</text>
+				<alignment>left</alignment>
+				<verticalAlignment>top</verticalAlignment>
+				<fontPath>./_art/fonts/neon_pixel-7.ttf</fontPath>
+				<fontSize>0.060</fontSize>
+				<pos>0.579 0.65</pos>
+				<size>0.942 0.28</size>
+				<color>C0C0C0</color>      
+				<zIndex>100</zIndex>
+				<color>CCFF00FF</color>
+				<glowColor>00000040</glowColor>
+				<glowSize>2</glowSize>
+			</text>
+			<text name="fullName" extra="true">
+				<text>${system.fullName}</text>
+				<alignment>left</alignment>
+				<verticalAlignment>top</verticalAlignment>
+				<fontPath>./_art/fonts/neon_pixel-7.ttf</fontPath>
+				<fontSize>0.024</fontSize>
+				<pos>0.58 0.72</pos>
+				<size>0.94 0.28</size>
+				<zIndex>100</zIndex>
+				<color>CCFF00FF</color>
+				<glowColor>000000A0</glowColor>
+				<glowSize>2</glowSize>
+			</text>
+			<text name="releaseYyear" extra="true">
+				<text>${system.releaseYearOrNull}</text>
+				<alignment>left</alignment>
+				<verticalAlignment>top</verticalAlignment>
+				<fontPath>./_art/fonts/neon_pixel-7.ttf</fontPath>
+				<fontSize>0.024</fontSize>
+				<pos>0.58 0.757</pos>
+				<size>0.94 0.28</size>        
+				<zIndex>100</zIndex>
+				<color>CCFF00FF</color>
+				<glowColor>000000A0</glowColor>
+				<glowSize>2</glowSize>
+			</text> 
+		</view>
+  </feature>
+	
+	<view name="system">
+	
+		<!-- Imagen / video de fondo -->
+		
+		<video name="staticBackgroundVideo" extra="true">
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<path>./_art/fondo.mp4</path>
+			<zIndex>1</zIndex>
+		</video>
+			
+		<!-- Logo de sistema -->
+		
+		<image name="logo">
+			<path>./_art/logos/${system.theme}.png</path>
+		</image>
+		
+		<image name="logo2" extra="true">
+			<path>./_art/logos/${system.theme}.png</path>
+			<origin>0 0</origin>
+			<pos>0.18 0.3</pos>
+			<size>0.25 0.4</size>
+			<zIndex>2</zIndex>
+		</image>
+			
+		<!-- Modo de vista de los sistemas -->
+		
+		<carousel name="systemcarousel" extra="true">
+			<type>vertical_wheel</type>
+			<pos>0.038 0.005</pos>
+			<size>1 1</size>
+			<origin>0 0</origin>
+			<color>FFFFFF00</color>
+			<logoScale>1.65</logoScale>
+			<logoSize>0.11 0.11</logoSize>
+			<logoRotation>19</logoRotation>
+			<logoRotationOrigin>2.31 0.45</logoRotationOrigin>
+			<logoAlignment>left</logoAlignment>
+			<maxLogoCount>15</maxLogoCount>
+			<systemInfoDelay>0.5</systemInfoDelay> <!-- tiempo de retardo en q aparezca el nº de juegos -->
+			<zIndex>2</zIndex>
+		</carousel>
+					
+		<!-- Numero de juegos del sistema --> 
+			
+		<text name="systemInfo">		
+			<visible>false</visible>
+		</text>
+		
+		<helpsystem name="help">
+			<pos>0.5 0.95</pos>
+		</helpsystem>
+			
+	</view>
+  
+</theme>

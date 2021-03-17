@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	
+	<view name="system">
+		<video name="videobox" extra="true">
+			<pos>0.675 0.1</pos>
+			<size>0.23 0.45</size>
+			<rotation>0.9</rotation>
+			<rotationOrigin>0.6 0.1</rotationOrigin>
+			<roundCorners>0.02</roundCorners>
+			<path>./_art/videosystems/${system.name}.mp4</path>
+			<delay>0.20</delay>
+			<color>FFFFFFFF</color>
+			<effect>none</effect>	
+			<zIndex>2</zIndex>
+		</video>
+	</view>
+	
+</theme>

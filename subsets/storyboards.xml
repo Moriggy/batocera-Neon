@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<carousel name="systemcarousel">
+			<defaultTransition>fade &amp; slide</defaultTransition>
+		</carousel>
+	</view>
+  <view name="gamecarousel">
+    <image name="logo">
+      <storyboard>
+        <animation property="x" from="0.991" begin="0.996" duration="350" mode="EaseInQuint" repeat="0" autoReverse="true"/>
+        <animation property="opacity" from="0" to="1" duration="350" mode="easeIn"/>
+        <animation property="scale" from="0" to="1" duration="350" mode="easeOut"/>
+      </storyboard>
+    </image>
+	
+	<image name="background2">
+		  <storyboard>
+			<animation property="opacity" from="0.5" to="1" duration="750" mode="linear" repeat="0" autoReverse="true"/>			
+		  </storyboard>
+	</image>
+  </view>
+  
+  <feature supported="manufacturer">
+    <view name="system">
+      <text name="systemInfoEx" extra="true">      
+        <storyboard>
+          <animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+        
+          <animation property="opacity" from="0" to="1" begin="750" duration="250" mode="easeIn"/>
+          <animation property="scale" from="0" to="1" begin="750" duration="250" mode="easeOut"/> 
+          
+       <!--   <animation property="y" from="0.75" begin="750" duration="250" mode="easeOut"/> -->
+        </storyboard>
+      </text>
+    </view>
+  </feature>
+</theme>

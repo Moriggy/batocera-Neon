@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+#############################################
+####		  Theme Neon				 ####
+####	   by Moriggy (EmulOS Team)		 ####
+####									 ####
+####		Tipo de vista rueda			 ####
+#############################################
+-->
+
+<theme defaultView="gamecarousel">
+
+	<formatVersion>7</formatVersion>
+	
+	<variables>
+		<baseColor>8b0000</baseColor>
+		<gradientEndColor>6b2020</gradientEndColor>
+		<glowColor>Ab000020</glowColor>
+		<systemInfoColor>DDDDDDD8</systemInfoColor>
+		<groupColor>BD4747</groupColor>
+		<groupSeparatorColor>BD4747</groupSeparatorColor>
+		<backgroundImage>./_art/frame.png</backgroundImage>
+		<systemViewExInfos>Mas Informacion Sistema</systemViewExInfos>
+		<animationsSubsetName>Animaciones</animationsSubsetName>
+		<helpSubsetName>Color iconos</helpSubsetName>
+		<colored>De Color</colored>
+		<subset.colorset>Colores</subset.colorset>		
+	</variables>
+	
+	<view name="screen">
+	
+		<!-- Reloj pantalla -->
+		<text name="clock">
+			<textColor>FFFFFF</textColor>
+			<color>${baseColor}</color>
+			<fontSize>0.023</fontSize>
+			<fontPath>./_art/fonts/Watone.ttf</fontPath>
+			<pos>0.905 0.954</pos>
+			<size>0.062 0.031</size>
+			<alignment>right</alignment>
+			<verticalAlignment>center</verticalAlignment>
+		</text>
+		
+		<batteryIndicator name="batteryIndicator">
+			<visible>false</visible>
+		</batteryIndicator>
+		
+	</view>
+	
+	<!-- Opciones de colores  -->
+	
+	<subset name="colorset" displayName="${subset.colorset}">
+		<include name="azul" displayName="${blue}">./subsets/colorsets/blue.xml</include>
+		<include name="rojo" displayName="${red}">./subsets/colorsets/red.xml</include>
+		<include name="verde" displayName="${green}">./subsets/colorsets/green.xml</include>
+		<include name="cian">./subsets/colorsets/cyan.xml</include>
+		<include name="amarillo" displayName="${yellow}">./subsets/colorsets/yellow.xml</include>
+		<include name="violeta">./subsets/colorsets/violet.xml</include>
+		<include name="naranja">./subsets/colorsets/orange.xml</include>
+		<include name="gris" displayName="${gray}">./subsets/colorsets/gray.xml</include>
+	</subset>
+	
+	<!-- Vistas comunes  -->
+	
+	<include>./vistas/menu.xml</include>
+	<include>./vistas/system.xml</include>
+	<include>./vistas/gamecarousel.xml</include>
+	
+	<!-- Iconos info sistema  -->
+	
+	<include subset="Tipo de iconos" name="Standard Icons">./_art/iconsets/default.xml</include>
+	<include subset="Tipo de iconos" name="SNES">./_art/iconsets/snes.xml</include>
+	<include subset="Tipo de iconos" name="SNES ALT">./_art/iconsets/snesalt.xml</include>
+	<include subset="Tipo de iconos" name="XBox">./_art/iconsets/xbox.xml</include>
+	<include subset="Tipo de iconos" name="PSX">./_art/iconsets/psx.xml</include>
+	
+	<!-- Opciones para System view background -->	
+	
+	<include subset="Opciones Sistemas" name="Video Sistemas">./_art/systemop/Video-Sistemas.xml</include>
+	<include subset="Opciones Sistemas" name="Consolas">./_art/systemop/consolas.xml</include>
+	
+	<!-- Información extendida de la consola/sistema -->
+	
+	<subset name="Mas Info Sistema" displayName="${systemViewExInfos}" tinyScreen="false">
+		<include name="Si" displayName="${yes}">./subsets/extendedinfo.xml</include>
+		<include name="No" displayName="${no}"/>
+	</subset>
+	
+	<!-- Storyboards -->
+	
+	<subset name="Animaciones" displayName="${animationsSubsetName}">
+		<include name="Si" displayName="${yes}">./subsets/storyboards.xml</include>
+		<include name="No" displayName="${no}"/>
+	</subset>
+	
+	<!-- Subset options for help -->
+	
+	<subset name="helpsystem" displayName="${helpSubsetName}">
+		<include name="Con color" displayName="${colored}">./subsets/help/colorhelp.xml</include>
+		<include name="Sin Color" displayName="${gray}">./subsets/help/default.xml</include>
+	</subset>
+	
+</theme>

@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Theme: es-theme-carbon
+author: Fabrice CARUSO
+license: creative commons CC-BY-NC-SA
+originally based on: "Carbon" by Eric Hettervik (Rookervik)
+originally based on: "simple" by nils bonenberger
+-->
+<theme>
+  <formatVersion>7</formatVersion>
+
+  <view name="gamecarousel">
+    <gamecarousel name="gamecarousel">
+      <type>vertical_wheel</type>
+      <pos>-0.085 0</pos>
+      <size>1 1</size>
+      <origin>0 0</origin>
+      <logoScale>1.4</logoScale>
+      <logoSize>0.14 0.14</logoSize>
+      <logoRotation>16</logoRotation>
+      <logoRotationOrigin>3.2 0.25</logoRotationOrigin>
+      <logoAlignment>right</logoAlignment>
+      <maxLogoCount>7</maxLogoCount>
+      <imageSource>marquee</imageSource> <!-- text, image, thumbnail, marquee -->
+      <scrollSound>./_art/scroll.wav</scrollSound>
+	  <zIndex>3</zIndex>
+    </gamecarousel> 
+
+	<!-- Puntero de sistemas -->
+
+	<image name="logo" extra="true">
+		<tile>false</tile>
+		<path>./_art/pointer/${system.theme}.png</path>
+		<origin>1 0.5</origin>
+		<pos>0.999 0.5</pos>
+		<size>0.049 0.16</size>
+		<color>FFFFFFFF</color>
+		<zIndex>2</zIndex>
+	</image>
+		
+	<helpsystem name="help">
+		<pos>1 1</pos>
+	</helpsystem>
+		
+    <text name="gamecarouselLogoText">
+      <color>FFFFFFFF</color>
+      <glowColor>000000FF</glowColor>
+      <glowSize>4</glowSize>
+      <lineSpacing>1.0</lineSpacing>
+    </text>
+    <video name="md_video">
+      <pos>0.287 0.54</pos>
+		<maxSize>0.48 0.48</maxSize>
+		<origin>0.5 0.5</origin>
+      <showSnapshotNoVideo>true</showSnapshotNoVideo>
+      <showSnapshotDelay>false</showSnapshotDelay>
+      <loops>1</loops>
+	  <delay>0.01</delay>
+      <roundCorners>0.02</roundCorners>
+	  <zIndex>1</zIndex>
+    </video>
+	
+	<image name="background" extra="true">
+		<pos>0 0</pos>
+		<size>1 1</size>
+		<path>./_art/cabinet.png</path>
+		<zIndex>2</zIndex>
+	</image>
+	
+	<image name="background2" extra="true">
+		<pos>0 0</pos>
+		<size>1 1</size>
+		<path>./_art/gamelist.png</path>
+		<zIndex>1</zIndex>
+	</image>
+	
+	<image name="marquesina" extra="true">
+		<path>./_art/marquees/${system.theme}.png</path>
+		<pos>0.29 0.11</pos>
+		<size>0.41 0.18</size>
+		<origin>0.5 0.5</origin>
+		<zIndex>1</zIndex>
+	</image>
+	
+	<image name="md_fanart">
+      <pos>0.5 0</pos>
+	  <size>0.5 1</size>
+      <origin>0 0</origin>
+      <color>FFFFFFFF</color>
+<colorEnd>FFFFFFFF</colorEnd>
+
+      <linearSmooth>true</linearSmooth>
+      <zIndex>0</zIndex>
+    </image>
+
+    <text name="md_genre, md_developer, md_publisher, md_lastplayed, md_releasedate, md_players, md_lbl_developer, md_lbl_publisher, md_lbl_lastplayed, md_lbl_playcount, md_lbl_players, md_lbl_releasedate">
+      <storyboard>
+        <animation property="opacity" from="0" duration="350" mode="easeOut"/>
+      </storyboard>
+    </text>    
+    <text name="md_lbl_developer, md_lbl_publisher, md_lbl_lastplayed, md_lbl_playcount, md_lbl_players, md_lbl_releasedate">
+      <color>969696</color>
+      <forceUppercase>0</forceUppercase>
+      <fontPath>./art/fonts/Cabin-Regular.ttf</fontPath>
+      <fontSize>0.023</fontSize>
+    </text>
+    
+    <text name="md_genre, md_developer, md_publisher, md_lastplayed, md_releasedate, md_players">
+      <color>969696</color>
+      <forceUppercase>0</forceUppercase>
+      <fontPath>./art/fonts/Cabin-Bold.ttf</fontPath>
+      <fontSize>0.023</fontSize>
+    </text>
+
+    <text name="md_lbl_rating, md_lbl_publisher, md_publisher, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_lbl_releasedate, md_lbl_genre, md_lbl_developer">
+      <pos>1 1</pos>
+    </text>
+
+    <datetime name="md_lastplayed">
+      <pos>1 1</pos>
+    </datetime>
+    
+    <image name="md_flag">
+      <origin>0 0.5</origin>
+      <pos>1 1</pos>
+      <maxSize>0.02 0.05</maxSize>
+      <linearSmooth>true</linearSmooth>
+    </image>
+    <text name="md_developer">
+      <color>EFEFFF</color>
+      <pos>1 1</pos>
+      <size>0.30 0.05</size>
+      <alignment>left</alignment>
+      <fontSize>0.025</fontSize>
+    </text>
+    <rating name="md_rating">
+      <pos>1 1</pos>
+      <size>0.05 0.03</size>
+      <size verticalScreen="true">0.05 0.02</size>
+      <horizontalAlignment>right</horizontalAlignment>      
+      <color>FFFF00</color>
+      <unfilledColor>808080</unfilledColor>
+  <unfilledPath>:/star_filled.svg</unfilledPath>
+    </rating>
+    <text name="md_lbl_players">
+      <pos>1 1</pos>
+      <pos verticalScreen="true">0.85 0.645</pos>
+      <size>0.09 0</size>
+    </text>
+    <text name="md_players">
+      <color>EFEFFF</color>
+      <pos>1 1</pos>
+      <size>0.02 0</size>
+    </text>
+    <text name="md_lbl_releasedate">
+      <color>969696</color>
+      <pos>1 1</pos>
+      <size>0.2 0</size>
+    </text>
+    <datetime name="md_releasedate">
+      <color>EFEFFF</color>
+      <pos>1 1</pos>
+      <pos verticalScreen="true">0.7 0.645</pos>
+      <size>0 0.033</size>
+      <format>${dateFormat}</format>
+    </datetime>
+    <text name="md_description">
+      <pos>1 1</pos>
+      <size>0.43 0.16</size>
+      <color>C0C0C0</color>
+      <forceUppercase>0</forceUppercase>
+      <fontPath>./art/fonts/Cabin-Regular.ttf</fontPath>
+      <fontSize>0.023</fontSize>
+    </text>
+
+  </view>
+</theme>

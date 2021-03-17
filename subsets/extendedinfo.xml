@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<text name="systemInfoEx" extra="true">
+			<!-- possible bindings are :
+	{binding:total}, {binding:played}, {binding:favorites}, {binding:hidden}, {binding:gamesPlayed}
+	{binding:mostPlayed}, {binding:lastPlayedDate}
+	-->
+			<text>Juegos : {binding:total}
+	Favoritos: {binding:favorites}
+	Veces Jugado: {binding:gamesPlayed}
+	Mas Jugado: {binding:mostPlayed}
+	Ultimo Jugado: {binding:lastPlayedDate}</text>			
+			<alignment>right</alignment>			
+			<fontPath>./_art/fonts/neon_pixel-7.ttf</fontPath>
+			<fontSize>0.03</fontSize>
+			<pos>0.05 0.62</pos>
+			<size>0.94 0.28</size>
+			<zIndex>3</zIndex>
+			<color>39FF14FF</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+		</text>
+	</view>
+</theme>
