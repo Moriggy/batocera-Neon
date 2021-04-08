@@ -73,6 +73,15 @@
 			<size>0.25 0.4</size>
 			<zIndex>2</zIndex>
 		</image>
+		
+		<!-- Logo de sistema en texto si falta imagen -->
+		
+		<text name="logoText">
+			<fontPath>./_art/fonts/BigSquareDots.ttf</fontPath>
+			<fontSize>0.04</fontSize>
+			<color>FF8000</color>
+			<forceUppercase>true</forceUppercase>    
+		</text>
 			
 		<!-- Modo de vista de los sistemas -->
 		

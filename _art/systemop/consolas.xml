@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	
+	<view name="system">
+		<image name="ControllerOverlay" extra="true">
+			<pos>0.67 0.2</pos>
+			<size>0.225 0.225</size>
+			<path>./_art/consoles/${system.theme}.png</path>
+			<color>FFFFFFF0</color>
+			<zIndex>2</zIndex>
+		</image>
+	</view>
+	
+</theme>
